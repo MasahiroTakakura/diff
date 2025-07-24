@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# テキスト比較アプリ
 
-## Getting Started
+Next.jsとReactを使用して作成されたテキスト比較アプリケーションです。2つのテキストを入力して、リアルタイムで差分を表示できます。
 
-First, run the development server:
+## 機能
 
+- 2つのテキストエリアにテキストを入力
+- リアルタイムでの差分表示
+- 左右分割表示で差分を視覚的に確認
+- サンプルデータの読み込み機能
+- テキストのクリア機能
+- レスポンシブデザイン
+
+## 技術スタック
+
+- **Next.js 15** - Reactフレームワーク
+- **React 19** - UIライブラリ
+- **TypeScript** - 型安全性
+- **Tailwind CSS** - スタイリング
+- **react-diff-viewer-continued** - 差分表示コンポーネント
+
+## セットアップ
+
+1. 依存関係をインストール:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. 開発サーバーを起動:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. ブラウザで [http://localhost:3000](http://localhost:3000) を開く
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 使用方法
 
-## Learn More
+1. 「サンプルデータを読み込み」ボタンをクリックしてサンプルテキストを表示
+2. または、左右のテキストエリアに任意のテキストを入力
+3. 下部の差分表示エリアでリアルタイムに差分を確認
+4. 「クリア」ボタンでテキストをリセット
 
-To learn more about Next.js, take a look at the following resources:
+## ビルド
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+本番用ビルドを作成:
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ビルドされたアプリケーションを起動:
+```bash
+npm start
+```
 
-## Deploy on Vercel
+## ライセンス
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
