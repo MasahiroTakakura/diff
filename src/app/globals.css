@@ -90,20 +90,6 @@ body {
   animation: shimmer 1.5s infinite;
 }
 
-/* テキストエリアのフォーカスエフェクト */
-textarea:focus {
-  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1), 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-}
-
-/* ボタンのホバーエフェクト */
-button {
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-button:hover {
-  transform: translateY(-2px);
-}
-
 /* 差分ビューアーのカスタムスタイル */
 .diff-viewer {
   font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
