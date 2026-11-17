@@ -4,6 +4,7 @@ import React, { useCallback, useDeferredValue, useEffect, useMemo, useRef, useSt
 import DiffViewer, { DiffMethod } from 'react-diff-viewer-continued';
 import { createTwoFilesPatch, diffLines } from 'diff';
 import TextPane from '@/components/TextPane';
+import RakutenAd from '@/components/RakutenAd';
 import {
   CompareOptions,
   defaultCompareOptions,
@@ -241,7 +242,7 @@ const TextDiffApp: React.FC = () => {
               テキスト比較アプリ
             </h1>
             <p className="text-gray-600 text-sm mt-1">
-              入力したテキストはブラウザ内だけで処理され、外部に送信・保存されません
+              入力したテキストはブラウザ内だけで処理され、外部に送信・保存されません（本サイトには広告が含まれます）
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -461,6 +462,7 @@ const TextDiffApp: React.FC = () => {
             )}
           </div>
         </section>
+        <RakutenAd />
       </main>
 
       {toast && (
